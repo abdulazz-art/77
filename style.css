@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation-name: nom;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    position: relative;
+}
+@keyframes nom{
+    0%{
+        font-size: 30px;
+        background-color: yellow;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        font-size: 70px;
+        background-color: green;
+    }
+    50%{
+        background-color: orange;
+        border-radius: 50%;
+        left: 1000px;
+    }
+    75%{
+        background-color: blue;
+    }
+    100%{
+        background-color: aqua;
+        left: 0;
+    }
+}
+
+.ota{
+    width: 900px;
+    height: 600px;
+    background-color: navajowhite;
+    position: relative;
+}
+
+.bola1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+.bola2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    z-index: 20;
+    left: 500px;
+    top: 400px;
+
+}
